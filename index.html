@@ -1,0 +1,319 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jogos dos pontinhos</title>
+		<style>
+			*{
+				text-align:center;
+				font-size:50px;
+				margin:0px;
+			}
+			button{
+				width:50px;
+				height:50px;
+				background-color:white;
+				border:none;
+			}
+			#l12,#l23,#l34,#l45,#l67,#l78,#l89,#l910,#l1112,#l1213,#l1314,#l1415,#l1617,#l1718,#l1819,#l1920,#l2122,#l2223,#l2324,#l2425{
+				width:125px;
+				height:45px;
+			}
+			#l16,#l27,#l38,#l49,#l510,#l611,#l712,#l813,#l914,#l1015,#l1116,#l1217,#l1318,#l1419,#l1520,#l1621,#l1722,#l1823,#l1924,#l2025{
+				width:45px;
+				height:125px;
+			}
+			img{
+				width:45px;
+				height:45px;
+			}
+			input{
+				width:125px;
+				height:125px;
+				background-color:white;
+				border:none;
+			}
+		</style>
+		<script>
+			function troca(){
+				var jogador=document.j.jogador.value;
+				if(jogador=="X"){
+					document.j.jogador.value="O";
+					document.getElementById('jogador').style.background="blue";
+				}
+				if(jogador=="O"){
+					document.j.jogador.value="X";
+					document.getElementById('jogador').style.background="red";
+				}
+			}
+			function verificar(){
+				var l12=document.getElementById('l12').style.backgroundColor;
+				
+				troca();
+			}
+			function colocar(linha){
+				alert();
+				var colorJogador=document.getElementById('jogador').style.backgroundColor;
+				if(linha=="l12"){
+					document.getElementById('l12').style.background=colorJogador;
+					document.f.l12.disabled=true;
+				}
+				if(linha=="l23"){
+					document.getElementById('l23').style.background=colorJogador;
+					document.f.l23.disabled=true;
+				}
+				if(linha=="l34"){
+					document.getElementById('l34').style.background=colorJogador;
+					document.f.l34.disabled=true;
+				}
+				if(linha=="l45"){
+					document.getElementById('l45').style.background=colorJogador;
+					document.f.l45.disabled=true;
+				}
+				if(linha=="l16"){
+					document.getElementById('l16').style.background=colorJogador;
+					document.f.l16.disabled=true;
+				}
+				if(linha=="l27"){
+					document.getElementById('l27').style.background=colorJogador;
+					document.f.l27.disabled=true;
+				}
+				if(linha=="l38"){
+					document.getElementById('l38').style.background=colorJogador;
+					document.f.l38.disabled=true;
+				}
+				if(linha=="l49"){
+					document.getElementById('l49').style.background=colorJogador;
+					document.f.l49.disabled=true;
+				}
+				if(linha=="l510"){
+					document.getElementById('l510').style.background=colorJogador;
+					document.f.l510.disabled=true;
+				}
+				if(linha=="l67"){
+					document.getElementById('l67').style.background=colorJogador;
+					document.f.l67.disabled=true;
+				}
+				if(linha=="l78"){
+					document.getElementById('l78').style.background=colorJogador;
+					document.f.l78.disabled=true;
+				}
+				if(linha=="l89"){
+					document.getElementById('l89').style.background=colorJogador;
+					document.f.l89.disabled=true;
+				}
+				if(linha=="l910"){
+					document.getElementById('l910').style.background=colorJogador;
+					document.f.l910.disabled=true;
+				}
+				if(linha=="l611"){
+					document.getElementById('l611').style.background=colorJogador;
+					document.f.l611.disabled=true;
+				}
+				if(linha=="l712"){
+					document.getElementById('l712').style.background=colorJogador;
+					document.f.l712.disabled=true;
+				}
+				if(linha=="l813"){
+					document.getElementById('l813').style.background=colorJogador;
+					document.f.l813.disabled=true;
+				}
+				if(linha=="l914"){
+					document.getElementById('l914').style.background=colorJogador;
+					document.f.l914.disabled=true;
+				}
+				if(linha=="l1015"){
+					document.getElementById('l1015').style.background=colorJogador;
+					document.f.l1015.disabled=true;
+				}
+				if(linha=="l1112"){
+					document.getElementById('l1112').style.background=colorJogador;
+					document.f.l1112.disabled=true;
+				}
+				if(linha=="l1213"){
+					document.getElementById('l1213').style.background=colorJogador;
+					document.f.l1213.disabled=true;
+				}
+				if(linha=="l1314"){
+					document.getElementById('l1314').style.background=colorJogador;
+					document.f.l1214.disabled=true;
+				}
+				if(linha=="l1415"){
+					document.getElementById('l1415').style.background=colorJogador;
+					document.f.l1415.disabled=true;
+				}
+				if(linha=="l1116"){
+					document.getElementById('l1116').style.background=colorJogador;
+					document.f.l1116.disabled=true;
+				}
+				if(linha=="l1217"){
+					document.getElementById('l1217').style.background=colorJogador;
+					document.f.l1217.disabled=true;
+				}
+				if(linha=="l1318"){
+					document.getElementById('l1318').style.background=colorJogador;
+					document.f.l1318.disabled=true;
+				}
+				if(linha=="l1419"){
+					document.getElementById('l1419').style.background=colorJogador;
+					document.f.l1419.disabled=true;
+				}
+				if(linha=="l1520"){
+					document.getElementById('l1520').style.background=colorJogador;
+					document.f.l1520.disabled=true;
+				}
+				if(linha=="l1617"){
+					document.getElementById('l1617').style.background=colorJogador;
+					document.f.l11617.disabled=true;
+				}
+				if(linha=="l1718"){
+					document.getElementById('l1718').style.background=colorJogador;
+					document.f.l1718.disabled=true;
+				}
+				if(linha=="l1819"){
+					document.getElementById('l1819').style.background=colorJogador;
+					document.f.l1819.disabled=true;
+				}
+				if(linha=="l1920"){
+					document.getElementById('l1920').style.background=colorJogador;
+					document.f.l1912.disabled=true;
+				}
+				if(linha=="l1621"){
+					document.getElementById('l1621').style.background=colorJogador;
+					document.f.l1621.disabled=true;
+				}
+				if(linha=="l1722"){
+					document.getElementById('l1722').style.background=colorJogador;
+					document.f.l1722.disabled=true;
+				}
+				if(linha=="l1823"){
+					document.getElementById('l1823').style.background=colorJogador;
+					document.f.l1823.disabled=true;
+				}
+				if(linha=="l1924"){
+					document.getElementById('l1924').style.background=colorJogador;
+					document.f.l1924.disabled=true;
+				}
+				if(linha=="l2025"){
+					document.getElementById('l2025').style.background=colorJogador;
+					document.f.l2025.disabled=true;
+				}
+				if(linha=="l2122"){
+					document.getElementById('l2122').style.background=colorJogador;
+					document.f.l2122.disabled=true;
+				}
+				if(linha=="l2223"){
+					document.getElementById('l2223').style.background=colorJogador;
+					document.f.l2223.disabled=true;
+				}
+				if(linha=="l2324"){
+					document.getElementById('l2324').style.background=colorJogador;
+					document.f.l2324.disabled=true;
+				}
+				if(linha=="l2425"){
+					document.getElementById('l2425').style.background=colorJogador;
+					document.f.l2425.disabled=true;
+				}
+				verificar();
+			}
+		</script>
+	</head>
+	<body bg-color="white">
+		<form name="f">
+			<img src="pontinho.png" >
+			<button type="button" id="l12" name="l12" onclick="colocar('l12')"></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l23" name="l23"  onclick="colocar('l23')"></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l34" name="l34" onclick="colocar('l34')" ></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l45" name="l45" onclick="colocar('l45')" ></button>
+			<img src="pontinho.png" >
+				<br>
+			<button type="button" id="l16" name="l16" onclick="colocar('l16')"></button>
+			<input type="button" name="quadrado1">
+			<button type="button" id="l27" name="l27" onclick="colocar('l27')"></button>
+			<input type="button" name="quadrado2">
+			<button type="button" id="l38" name="l38" onclick="colocar('l38')"></button>
+			<input type="button" name="quadrado3">
+			<button type="button" id="l49" name="l49" onclick="colocar('l49')"></button>
+			<input type="button" name="quadrado4">
+			<button type="button" id="l510" name="l510" onclick="colocar('l510')"></button>
+			<br>
+			<img src="pontinho.png" >
+			<button type="button" id="l67" name="l67" onclick="colocar('l67')"></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l78" name="l78" onclick="colocar('l78')"></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l89" name="l89" onclick="colocar('l89')" ></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l910" name="l910" onclick="colocar('l910')" ></button>
+			<img src="pontinho.png" >
+				<br>
+			<button type="button" id="l611" name="l611" onclick="colocar('l611')"></button>
+			<input type="button" name="quadrado5">
+			<button type="button" id="l712" name="l712" onclick="colocar('l712')"></button>
+			<input type="button" name="quadrado6">
+			<button type="button" id="l813" name="l813" onclick="colocar('l813')"></button>
+			<input type="button" name="quadrado7">
+			<button type="button" id="l914" name="l914" onclick="colocar('l914')"></button>
+			<input type="button" name="quadrado8">
+			<button type="button" id="l1015" name="l1015" onclick="colocar('l1015')"></button>
+			<br>
+			<img src="pontinho.png" >
+			<button type="button" id="l1112" name="l1112" onclick="colocar('l1112')"></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l1213" name="l1213"  onclick="colocar('l1213')"></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l1314" name="l1314" onclick="colocar('l1314')" ></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l1415" name="l1415" onclick="colocar('l1415')" ></button>
+			<img src="pontinho.png" >
+				<br>
+			<button type="button" id="l1116" name="l1116" onclick="colocar('l1116')"></button>
+			<input type="button" name="quadrado9">
+			<button type="button" id="l1217" name="l1217" onclick="colocar('l1217')"></button>
+			<input type="button" name="quadrado10">
+			<button type="button" id="l1318" name="l1318" onclick="colocar('l1318')"></button>
+			<input type="button" name="quadrado11">
+			<button type="button" id="l1419" name="l1419" onclick="colocar('l1419')"></button>
+			<input type="button" name="quadrado12">
+			<button type="button" id="l1520" name="l1520" onclick="colocar('l1520')"></button>
+			<br>
+			<img src="pontinho.png" >
+			<button type="button" id="l1617" name="l1617" onclick="colocar('l1617')"></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l1718" name="l1718" onclick="colocar('l1718')"></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l1819" name="l1819" onclick="colocar('l1819')" ></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l1920" name="l1920" onclick="colocar('l1920')" ></button>
+			<img src="pontinho.png" >
+				<br>
+			<button type="button" id="l1621" name="l1621" onclick="colocar('l1621')"></button>
+			<input type="button" name="quadrado13">
+			<button type="button" id="l1722" name="l1722" onclick="colocar('l1722')"></button>
+			<input type="button" name="quadrado14">
+			<button type="button" id="l1823" name="l1823" onclick="colocar('l1823')"></button>
+			<input type="button" name="quadrado15">
+			<button type="button" id="l1924" name="l1924"  onclick="colocar('l1924')"></button>
+			<input type="button" name="quadrado16">
+			<button type="button" id="l2025" name="l2025" onclick="colocar('l2025')"></button>
+			<br>
+			<img src="pontinho.png" >
+			<button type="button" id="l2122" name="l2122" onclick="colocar('l2122')"></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l2223" name="l2223" onclick="colocar('l2223')"></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l2324" name="l2324" onclick="colocar('l2324')" ></button>
+			<img src="pontinho.png" >
+			<button type="button" id="l2425" name="l2425" onclick="colocar('l2425')" ></button>
+			<img src="pontinho.png">
+		</form>
+		<br>
+		<form name="j">
+			É a vez do jogador:
+			</br>
+			<input type="button" name="jogador" id="jogador"  value="X" style="background-color:red">
+		</form>
+	</body>
+</html>
