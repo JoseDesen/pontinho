@@ -13,6 +13,8 @@
 				height:50px;
 				background-color:white;
 				border:none;
+				color:white;
+
 			}
 			#l12,#l23,#l34,#l45,#l67,#l78,#l89,#l910,#l1112,#l1213,#l1314,#l1415,#l1617,#l1718,#l1819,#l1920,#l2122,#l2223,#l2324,#l2425{
 				width:125px;
@@ -22,18 +24,40 @@
 				width:45px;
 				height:125px;
 			}
+
 			img{
 				width:45px;
 				height:45px;
 			}
-			input{
+			#quadrado1,#quadrado2,#quadrado3,#quadrado4,#quadrado5,#quadrado6,#quadrado7,#quadrado8,#quadrado9,#quadrado10,#quadrado11,#quadrado12,#quadrado13,#quadrado14,#quadrado15,#quadrado16{
 				width:125px;
 				height:125px;
+				font-size:50px;
 				background-color:white;
-				border:none;
+				
 			}
+
 		</style>
 		<script>
+
+			var quadrado1=0;
+			var quadrado2=0;
+			var quadrado3=0;
+			var quadrado4=0;
+			var quadrado5=0;
+			var quadrado6=0;
+			var quadrado7=0;
+			var quadrado8=0;
+			var quadrado9=0;
+			var quadrado10=0;
+			var quadrado11=0;
+			var quadrado12=0;
+			var quadrado13=0;
+			var quadrado14=0;
+			var quadrado15=0;
+			var quadrado16=0;
+
+
 			function troca(){
 				var jogador=document.j.jogador.value;
 				if(jogador=="X"){
@@ -47,14 +71,28 @@
 			}
 			function verificar(){
 				var l12=document.getElementById('l12').style.backgroundColor;
-				
+				var l27=document.getElementById('l27').style.backgroundColor;
+				var l67=document.getElementById('l67').style.backgroundColor;				
+				var l16=document.getElementById('l16').style.backgroundColor;
+				var jogador=document.j.jogador.value;
+				if(quadrado1==0){
+					if(l12!="" && l27!="" && l67!="" && l16!=""){
+						var quadrado=document.getElementById('quadrado1');
+						quadrado.innerHTML="<button type='button' id='quadrado01'>"+jogador+"</button>";
+						document.getElementById('quadrado01').style.color="black";
+					}
+					quadrado1=1;
+				}
+
 				troca();
 			}
 			function colocar(linha){
 				var colorJogador=document.getElementById('jogador').style.backgroundColor;
 				if(linha=="l12"){
 					document.getElementById('l12').style.background=colorJogador;
+					document.getElementById('l12').style.color=colorJogador;
 					document.f.l12.disabled=true;
+
 				}
 				if(linha=="l23"){
 					document.getElementById('l23').style.background=colorJogador;
@@ -70,22 +108,27 @@
 				}
 				if(linha=="l16"){
 					document.getElementById('l16').style.background=colorJogador;
+					document.getElementById('l16').style.color=colorJogador;
 					document.f.l16.disabled=true;
 				}
 				if(linha=="l27"){
 					document.getElementById('l27').style.background=colorJogador;
+					document.getElementById('l27').style.color=colorJogador;
 					document.f.l27.disabled=true;
 				}
 				if(linha=="l38"){
 					document.getElementById('l38').style.background=colorJogador;
+					document.getElementById('l38').style.color=colorJogador;
 					document.f.l38.disabled=true;
 				}
 				if(linha=="l49"){
 					document.getElementById('l49').style.background=colorJogador;
+					document.getElementById('l49').style.color=colorJogador;
 					document.f.l49.disabled=true;
 				}
 				if(linha=="l510"){
 					document.getElementById('l510').style.background=colorJogador;
+					document.getElementById('l510').style.color=colorJogador;
 					document.f.l510.disabled=true;
 				}
 				if(linha=="l67"){
@@ -106,22 +149,27 @@
 				}
 				if(linha=="l611"){
 					document.getElementById('l611').style.background=colorJogador;
+					document.getElementById('l611').style.color=colorJogador;
 					document.f.l611.disabled=true;
 				}
 				if(linha=="l712"){
 					document.getElementById('l712').style.background=colorJogador;
+					document.getElementById('l712').style.color=colorJogador;
 					document.f.l712.disabled=true;
 				}
 				if(linha=="l813"){
 					document.getElementById('l813').style.background=colorJogador;
+					document.getElementById('l813').style.color=colorJogador;
 					document.f.l813.disabled=true;
 				}
 				if(linha=="l914"){
 					document.getElementById('l914').style.background=colorJogador;
+					document.getElementById('l914').style.color=colorJogador;
 					document.f.l914.disabled=true;
 				}
 				if(linha=="l1015"){
 					document.getElementById('l1015').style.background=colorJogador;
+					document.getElementById('l1015').style.color=colorJogador;
 					document.f.l1015.disabled=true;
 				}
 				if(linha=="l1112"){
@@ -142,22 +190,27 @@
 				}
 				if(linha=="l1116"){
 					document.getElementById('l1116').style.background=colorJogador;
+					document.getElementById('l1116').style.color=colorJogador;
 					document.f.l1116.disabled=true;
 				}
 				if(linha=="l1217"){
 					document.getElementById('l1217').style.background=colorJogador;
+					document.getElementById('l1217').style.color=colorJogador;
 					document.f.l1217.disabled=true;
 				}
 				if(linha=="l1318"){
 					document.getElementById('l1318').style.background=colorJogador;
+					document.getElementById('l1318').style.color=colorJogador;
 					document.f.l1318.disabled=true;
 				}
 				if(linha=="l1419"){
 					document.getElementById('l1419').style.background=colorJogador;
+					document.getElementById('l1419').style.color=colorJogador;
 					document.f.l1419.disabled=true;
 				}
 				if(linha=="l1520"){
 					document.getElementById('l1520').style.background=colorJogador;
+					document.getElementById('l1520').style.color=colorJogador;
 					document.f.l1520.disabled=true;
 				}
 				if(linha=="l1617"){
@@ -178,22 +231,27 @@
 				}
 				if(linha=="l1621"){
 					document.getElementById('l1621').style.background=colorJogador;
+					document.getElementById('l1621').style.color=colorJogador;
 					document.f.l1621.disabled=true;
 				}
 				if(linha=="l1722"){
 					document.getElementById('l1722').style.background=colorJogador;
+					document.getElementById('l1722').style.color=colorJogador;
 					document.f.l1722.disabled=true;
 				}
 				if(linha=="l1823"){
 					document.getElementById('l1823').style.background=colorJogador;
+					document.getElementById('l1823').style.color=colorJogador;
 					document.f.l1823.disabled=true;
 				}
 				if(linha=="l1924"){
 					document.getElementById('l1924').style.background=colorJogador;
+					document.getElementById('l1924').style.color=colorJogador;
 					document.f.l1924.disabled=true;
 				}
 				if(linha=="l2025"){
 					document.getElementById('l2025').style.background=colorJogador;
+					document.getElementById('l2025').style.color=colorJogador;
 					document.f.l2025.disabled=true;
 				}
 				if(linha=="l2122"){
@@ -228,15 +286,15 @@
 			<button type="button" id="l45" name="l45" onclick="colocar('l45')" ></button>
 			<img src="pontinho.png" >
 				<br>
-			<button type="button" id="l16" name="l16" onclick="colocar('l16')"></button>
-			<input type="button" name="quadrado1">
-			<button type="button" id="l27" name="l27" onclick="colocar('l27')"></button>
-			<input type="button" name="quadrado2">
-			<button type="button" id="l38" name="l38" onclick="colocar('l38')"></button>
-			<input type="button" name="quadrado3">
-			<button type="button" id="l49" name="l49" onclick="colocar('l49')"></button>
-			<input type="button" name="quadrado4">
-			<button type="button" id="l510" name="l510" onclick="colocar('l510')"></button>
+			<button type="button" id="l16" name="l16" onclick="colocar('l16')">a</button>
+			<button type="button" id="quadrado1">a</button>
+			<button type="button" id="l27" name="l27" onclick="colocar('l27')">a</button>
+			<button type="button" id="quadrado2">a</button>
+			<button type="button" id="l38" name="l38" onclick="colocar('l38')">a</button>
+			<button type="button" id="quadrado3">a</button>
+			<button type="button" id="l49" name="l49" onclick="colocar('l49')">a</button>
+			<button type="button" id="quadrado4">a</button>
+			<button type="button" id="l510" name="l510" onclick="colocar('l510')">a</button>
 			<br>
 			<img src="pontinho.png" >
 			<button type="button" id="l67" name="l67" onclick="colocar('l67')"></button>
@@ -248,15 +306,15 @@
 			<button type="button" id="l910" name="l910" onclick="colocar('l910')" ></button>
 			<img src="pontinho.png" >
 				<br>
-			<button type="button" id="l611" name="l611" onclick="colocar('l611')"></button>
-			<input type="button" name="quadrado5">
-			<button type="button" id="l712" name="l712" onclick="colocar('l712')"></button>
-			<input type="button" name="quadrado6">
-			<button type="button" id="l813" name="l813" onclick="colocar('l813')"></button>
-			<input type="button" name="quadrado7">
-			<button type="button" id="l914" name="l914" onclick="colocar('l914')"></button>
-			<input type="button" name="quadrado8">
-			<button type="button" id="l1015" name="l1015" onclick="colocar('l1015')"></button>
+			<button type="button" id="l611" name="l611" onclick="colocar('l611')">a</button>
+			<button type="button" id="quadrado5">a</button>
+			<button type="button" id="l712" name="l712" onclick="colocar('l712')">a</button>
+			<button type="button" id="quadrado6">a</button>
+			<button type="button" id="l813" name="l813" onclick="colocar('l813')">a</button>
+			<button type="button" id="quadrado7">a</button>
+			<button type="button" id="l914" name="l914" onclick="colocar('l914')">a</button>
+			<button type="button" id="quadrado8">a</button>
+			<button type="button" id="l1015" name="l1015" onclick="colocar('l1015')">a</button>
 			<br>
 			<img src="pontinho.png" >
 			<button type="button" id="l1112" name="l1112" onclick="colocar('l1112')"></button>
@@ -268,15 +326,15 @@
 			<button type="button" id="l1415" name="l1415" onclick="colocar('l1415')" ></button>
 			<img src="pontinho.png" >
 				<br>
-			<button type="button" id="l1116" name="l1116" onclick="colocar('l1116')"></button>
-			<input type="button" name="quadrado9">
-			<button type="button" id="l1217" name="l1217" onclick="colocar('l1217')"></button>
-			<input type="button" name="quadrado10">
-			<button type="button" id="l1318" name="l1318" onclick="colocar('l1318')"></button>
-			<input type="button" name="quadrado11">
-			<button type="button" id="l1419" name="l1419" onclick="colocar('l1419')"></button>
-			<input type="button" name="quadrado12">
-			<button type="button" id="l1520" name="l1520" onclick="colocar('l1520')"></button>
+			<button type="button" id="l1116" name="l1116" onclick="colocar('l1116')">a</button>
+			<button type="button" id="quadrado9">a</button>
+			<button type="button" id="l1217" name="l1217" onclick="colocar('l1217')">a</button>
+			<button type="button" id="quadrado10">a</button>
+			<button type="button" id="l1318" name="l1318" onclick="colocar('l1318')">a</button>
+			<button type="button" id="quadrado11">a</button>
+			<button type="button" id="l1419" name="l1419" onclick="colocar('l1419')">a</button>
+			<button type="button" id="quadrado12">a</button>
+			<button type="button" id="l1520" name="l1520" onclick="colocar('l1520')">a</button>
 			<br>
 			<img src="pontinho.png" >
 			<button type="button" id="l1617" name="l1617" onclick="colocar('l1617')"></button>
@@ -288,15 +346,15 @@
 			<button type="button" id="l1920" name="l1920" onclick="colocar('l1920')" ></button>
 			<img src="pontinho.png" >
 				<br>
-			<button type="button" id="l1621" name="l1621" onclick="colocar('l1621')"></button>
-			<input type="button" name="quadrado13">
-			<button type="button" id="l1722" name="l1722" onclick="colocar('l1722')"></button>
-			<input type="button" name="quadrado14">
-			<button type="button" id="l1823" name="l1823" onclick="colocar('l1823')"></button>
-			<input type="button" name="quadrado15">
-			<button type="button" id="l1924" name="l1924"  onclick="colocar('l1924')"></button>
-			<input type="button" name="quadrado16">
-			<button type="button" id="l2025" name="l2025" onclick="colocar('l2025')"></button>
+			<button type="button" id="l1621" name="l1621" onclick="colocar('l1621')">a</button>
+			<button type="button" id="quadrado13">a</button>
+			<button type="button" id="l1722" name="l1722" onclick="colocar('l1722')">a</button>
+			<button type="button" id="quadrado14">a</button>
+			<button type="button" id="l1823" name="l1823" onclick="colocar('l1823')">a</button>
+			<button type="button" id="quadrado15">a</button>
+			<button type="button" id="l1924" name="l1924"  onclick="colocar('l1924')">a</button>
+			<button type="button" id="quadrado16">a</button>
+			<button type="button" id="l2025" name="l2025" onclick="colocar('l2025')">a</button>
 			<br>
 			<img src="pontinho.png" >
 			<button type="button" id="l2122" name="l2122" onclick="colocar('l2122')"></button>
@@ -315,4 +373,3 @@
 			<input type="button" name="jogador" id="jogador"  value="X" style="background-color:red">
 		</form>
 	</body>
-</html>
