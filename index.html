@@ -32,9 +32,14 @@
 			#quadrado1,#quadrado2,#quadrado3,#quadrado4,#quadrado5,#quadrado6,#quadrado7,#quadrado8,#quadrado9,#quadrado10,#quadrado11,#quadrado12,#quadrado13,#quadrado14,#quadrado15,#quadrado16{
 				width:125px;
 				height:125px;
-				font-size:50px;
 				background-color:white;
 				
+			}
+			input{
+				width:50px;
+				height:50px;
+				border:none;
+
 			}
 
 		</style>
@@ -56,6 +61,7 @@
 			var quadrado14=0;
 			var quadrado15=0;
 			var quadrado16=0;
+			var controle=1;
 
 
 			function troca(){
@@ -71,19 +77,327 @@
 			}
 			function verificar(){
 				var l12=document.getElementById('l12').style.backgroundColor;
-				var l27=document.getElementById('l27').style.backgroundColor;
-				var l67=document.getElementById('l67').style.backgroundColor;				
+				var l23=document.getElementById('l23').style.backgroundColor;
+				var l34=document.getElementById('l34').style.backgroundColor;
+				var l45=document.getElementById('l45').style.backgroundColor;
 				var l16=document.getElementById('l16').style.backgroundColor;
+				var l27=document.getElementById('l27').style.backgroundColor;
+				var l38=document.getElementById('l38').style.backgroundColor;
+				var l49=document.getElementById('l49').style.backgroundColor;
+				var l510=document.getElementById('l510').style.backgroundColor;
+				var l67=document.getElementById('l67').style.backgroundColor;
+				var l78=document.getElementById('l78').style.backgroundColor;
+				var l89=document.getElementById('l89').style.backgroundColor;
+				var l910=document.getElementById('l910').style.backgroundColor;
+				var l611=document.getElementById('l611').style.backgroundColor;
+				var l712=document.getElementById('l712').style.backgroundColor;
+				var l813=document.getElementById('l813').style.backgroundColor;
+				var l914=document.getElementById('l914').style.backgroundColor;
+				var l1015=document.getElementById('l1015').style.backgroundColor;
+				var l1112=document.getElementById('l1112').style.backgroundColor;
+				var l1213=document.getElementById('l1213').style.backgroundColor;
+				var l1314=document.getElementById('l1314').style.backgroundColor;
+				var l1415=document.getElementById('l1415').style.backgroundColor;
+				var l1116=document.getElementById('l1116').style.backgroundColor;
+				var l1217=document.getElementById('l1217').style.backgroundColor;
+				var l1318=document.getElementById('l1318').style.backgroundColor;
+				var l1419=document.getElementById('l1419').style.backgroundColor;
+				var l1520=document.getElementById('l1520').style.backgroundColor;
+				var l1617=document.getElementById('l1617').style.backgroundColor;
+				var l1718=document.getElementById('l1718').style.backgroundColor;
+				var l1819=document.getElementById('l1819').style.backgroundColor;
+				var l1920=document.getElementById('l1920').style.backgroundColor;
+				var l1621=document.getElementById('l1621').style.backgroundColor;
+				var l1722=document.getElementById('l1722').style.backgroundColor;
+				var l1823=document.getElementById('l1823').style.backgroundColor;
+				var l1924=document.getElementById('l1924').style.backgroundColor;
+				var l2025=document.getElementById('l2025').style.backgroundColor;
+				var l2122=document.getElementById('l2122').style.backgroundColor;
+				var l2223=document.getElementById('l2223').style.backgroundColor;
+				var l2324=document.getElementById('l2324').style.backgroundColor;
+				var l2425=document.getElementById('l2425').style.backgroundColor;
 				var jogador=document.j.jogador.value;
-				if(quadrado1==0){
-					if(l12!="" && l27!="" && l67!="" && l16!=""){
+				if(l12!="" && l27!="" && l67!="" && l16!=""){
+					if(quadrado1==0){
 						var quadrado=document.getElementById('quadrado1');
 						quadrado.innerHTML="<button type='button' id='quadrado01'>"+jogador+"</button>";
 						document.getElementById('quadrado01').style.color="black";
+						troca();
+						if(quadrado2==0){
+							if(l23!="" && l38!="" && l78!="" && l27!=""){
+								troca();
+							}
+						}
+						if(quadrado5==0){
+							if(l67!="" && l712!="" && l1112!="" && l611!=""){
+								troca();
+							}
+						}
+							
+						quadrado1=1;
 					}
-					quadrado1=1;
 				}
-
+				var jogador=document.j.jogador.value;
+				if(l23!="" && l38!="" && l78!="" && l27!=""){
+					if(quadrado2==0){
+						var quadrado=document.getElementById('quadrado2');
+						quadrado.innerHTML="<button type='button' id='quadrado02'>"+jogador+"</button>";
+						document.getElementById('quadrado02').style.color="black";
+						troca();
+						if(quadrado3==0){
+							if(l34!="" && l49!="" && l89!="" && l38!=""){
+								troca();
+							}
+						}
+						if(quadrado6==0){
+							if(l78!="" && l813!="" && l1213!="" && l712!=""){
+								troca();
+							}
+						}
+						quadrado2=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l34!="" && l49!="" && l89!="" && l38!=""){
+					if(quadrado3==0){
+						var quadrado=document.getElementById('quadrado3');
+						quadrado.innerHTML="<button type='button' id='quadrado03'>"+jogador+"</button>";
+						document.getElementById('quadrado03').style.color="black";
+						troca();
+						if(quadrado4==0){
+							if(l45!="" && l510!="" && l910!="" && l49!=""){
+								troca();
+							}
+						}
+						if(quadrado7==0){
+							if(l89!="" && l914!="" && l1314!="" && l813!=""){
+								troca();
+							}
+						}
+						quadrado3=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l45!="" && l510!="" && l910!="" && l49!=""){
+					if(quadrado4==0){
+						var quadrado=document.getElementById('quadrado4');
+						quadrado.innerHTML="<button type='button' id='quadrado04'>"+jogador+"</button>";
+						document.getElementById('quadrado04').style.color="black";
+						troca();
+						if(quadrado8==0){
+							if(l910!="" && l1015!="" && l1415!="" && l914!=""){
+								troca();
+							}
+						}
+						quadrado4=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l67!="" && l712!="" && l1112!="" && l611!=""){
+					if(quadrado5==0){
+						var quadrado=document.getElementById('quadrado5');
+						quadrado.innerHTML="<button type='button' id='quadrado05'>"+jogador+"</button>";
+						document.getElementById('quadrado05').style.color="black";
+						troca();
+						if(quadrado6==0){
+							if(l78!="" && l813!="" && l1213!="" && l712!=""){
+								troca();
+							}
+						}
+						if(quadrado9==0){
+							if(l1112!="" && l1217!="" && l1617!="" && l1116!=""){
+								troca();
+							}
+						}
+						quadrado5=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l78!="" && l813!="" && l1213!="" && l712!=""){
+					if(quadrado6==0){
+						var quadrado=document.getElementById('quadrado6');
+						quadrado.innerHTML="<button type='button' id='quadrado06'>"+jogador+"</button>";
+						document.getElementById('quadrado06').style.color="black";
+						troca();
+						if(quadrado7==0){
+							if(l89!="" && l914!="" && l1314!="" && l813!=""){
+								troca();
+							}
+						}
+						if(quadrado10==0){
+							if(l1213!="" && l1318!="" && l1718!="" && l1217!=""){
+								troca();
+							}
+						}
+						quadrado6=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l89!="" && l914!="" && l1314!="" && l813!=""){
+					if(quadrado7==0){
+						var quadrado=document.getElementById('quadrado7');
+						quadrado.innerHTML="<button type='button' id='quadrado07'>"+jogador+"</button>";
+						document.getElementById('quadrado07').style.color="black";
+						troca();
+						if(quadrado8==0){
+							if(l910!="" && l1015!="" && l1415!="" && l914!=""){
+								troca();
+							}
+						}
+						if(quadrado11==0){
+							if(l1314!="" && l1419!="" && l1819!="" && l1318!=""){
+								troca();
+							}
+						}
+						quadrado7=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l910!="" && l1015!="" && l1415!="" && l914!=""){
+					if(quadrado8==0){
+						var quadrado=document.getElementById('quadrado8');
+						quadrado.innerHTML="<button type='button' id='quadrado08'>"+jogador+"</button>";
+						document.getElementById('quadrado08').style.color="black";
+						troca();
+						if(quadrado12==0){
+							if(l1415!="" && l1520!="" && l1920!="" && l1419!=""){
+								troca();
+							}
+						}
+						quadrado8=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l1112!="" && l1217!="" && l1617!="" && l1116!=""){
+					if(quadrado9==0){
+						var quadrado=document.getElementById('quadrado9');
+						quadrado.innerHTML="<button type='button' id='quadrado09'>"+jogador+"</button>";
+						document.getElementById('quadrado09').style.color="black";
+						troca();
+						if(quadrado10==0){
+							if(l1213!="" && l1318!="" && l1718!="" && l1217!=""){
+								troca();
+							}
+						}
+						if(quadrado13==0){
+							if(l1617!="" && l1722!="" && l2122!="" && l1621!=""){
+								troca();
+							}
+						}
+						quadrado9=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l1213!="" && l1318!="" && l1718!="" && l1217!=""){
+					if(quadrado10==0){
+						var quadrado=document.getElementById('quadrado10');
+						quadrado.innerHTML="<button type='button' id='quadrado010'>"+jogador+"</button>";
+						document.getElementById('quadrado010').style.color="black";
+						troca();
+						if(quadrado11==0){
+							if(l1314!="" && l1419!="" && l1819!="" && l1318!=""){
+								troca();
+							}
+						}
+						if(quadrado14==0){
+							if(l1718!="" && l1823!="" && l2223!="" && l1722!=""){
+								troca();
+							}
+						}
+						quadrado10=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l1314!="" && l1419!="" && l1819!="" && l1318!=""){
+					if(quadrado11==0){
+						var quadrado=document.getElementById('quadrado11');
+						quadrado.innerHTML="<button type='button' id='quadrado011'>"+jogador+"</button>";
+						document.getElementById('quadrado011').style.color="black";
+						troca();
+						if(quadrado12==0){
+							if(l1415!="" && l1520!="" && l1920!="" && l1419!=""){
+								troca();
+							}
+						}
+						if(quadrado15==0){
+							if(l1819!="" && l1924!="" && l2324!="" && l1823!=""){
+								troca();
+							}
+						}
+						quadrado11=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l1415!="" && l1520!="" && l1920!="" && l1419!=""){
+					if(quadrado12==0){
+						var quadrado=document.getElementById('quadrado12');
+						quadrado.innerHTML="<button type='button' id='quadrado012'>"+jogador+"</button>";
+						document.getElementById('quadrado012').style.color="black";
+						troca();
+						if(quadrado16==0){
+							if(l1920!="" && l2025!="" && l2425!="" && l1924!=""){
+								troca();
+							}
+						}
+						quadrado12=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l1617!="" && l1722!="" && l2122!="" && l1621!=""){
+					if(quadrado13==0){
+						var quadrado=document.getElementById('quadrado13');
+						quadrado.innerHTML="<button type='button' id='quadrado013'>"+jogador+"</button>";
+						document.getElementById('quadrado013').style.color="black";
+						troca();
+						if(quadrado14==0){
+							if(l1718!="" && l1823!="" && l2223!="" && l1722!=""){
+								troca();
+							}
+						}
+						quadrado13=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l1718!="" && l1823!="" && l2223!="" && l1722!=""){
+					if(quadrado14==0){
+						var quadrado=document.getElementById('quadrado14');
+						quadrado.innerHTML="<button type='button' id='quadrado014'>"+jogador+"</button>";
+						document.getElementById('quadrado014').style.color="black";
+						troca();
+						if(quadrado15==0){
+							if(l1819!="" && l1924!="" && l2324!="" && l1823!=""){
+								troca();
+							}
+						}
+						quadrado14=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l1819!="" && l1924!="" && l2324!="" && l1823!=""){
+					if(quadrado15==0){
+						var quadrado=document.getElementById('quadrado15');
+						quadrado.innerHTML="<button type='button' id='quadrado015'>"+jogador+"</button>";
+						document.getElementById('quadrado015').style.color="black";
+						troca();
+						if(quadrado16==0){
+							if(l1920!="" && l2025!="" && l2425!="" && l1924!=""){
+								troca();
+							}
+						}
+						quadrado15=1;
+					}
+				}
+				var jogador=document.j.jogador.value;
+				if(l1920!="" && l2025!="" && l2425!="" && l1924!=""){
+					if(quadrado16==0){
+						var quadrado=document.getElementById('quadrado16');
+						quadrado.innerHTML="<button type='button' id='quadrado016'>"+jogador+"</button>";
+						document.getElementById('quadrado016').style.color="black";
+						troca();
+						
+						quadrado16=1;
+					}
+				}
 				troca();
 			}
 			function colocar(linha){
@@ -182,7 +496,7 @@
 				}
 				if(linha=="l1314"){
 					document.getElementById('l1314').style.background=colorJogador;
-					document.f.l1214.disabled=true;
+					document.f.l1314.disabled=true;
 				}
 				if(linha=="l1415"){
 					document.getElementById('l1415').style.background=colorJogador;
@@ -214,8 +528,9 @@
 					document.f.l1520.disabled=true;
 				}
 				if(linha=="l1617"){
+					
 					document.getElementById('l1617').style.background=colorJogador;
-					document.f.l11617.disabled=true;
+					document.f.l1617.disabled=true;
 				}
 				if(linha=="l1718"){
 					document.getElementById('l1718').style.background=colorJogador;
@@ -227,7 +542,7 @@
 				}
 				if(linha=="l1920"){
 					document.getElementById('l1920').style.background=colorJogador;
-					document.f.l1912.disabled=true;
+					document.f.l1920.disabled=true;
 				}
 				if(linha=="l1621"){
 					document.getElementById('l1621').style.background=colorJogador;
@@ -373,3 +688,4 @@
 			<input type="button" name="jogador" id="jogador"  value="X" style="background-color:red">
 		</form>
 	</body>
+</html>
