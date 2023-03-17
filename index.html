@@ -47,6 +47,9 @@ background-color:white;
 
 		</style>
 		<script>
+			var countX=0;
+			var countY=0;
+			var count=0;
 
 			var quadrado1=0;
 			var quadrado2=0;
@@ -72,11 +75,14 @@ background-color:white;
 				if(jogador=="X"){
 					document.j.jogador.value="O";
 					document.getElementById('jogador').style.background="blue";
+					
 				}
 				if(jogador=="O"){
 					document.j.jogador.value="X";
 					document.getElementById('jogador').style.background="red";
+					
 				}
+				
 			}
 			function verificar(){
 				var l12=document.getElementById('l12').style.backgroundColor;
