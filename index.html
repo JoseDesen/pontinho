@@ -3,9 +3,6 @@
 		<meta charset="UTF-8">
 		<title>jogos dos pontinhos</title>
 		<style>
-body{
-background-color:white;
-}
 			*{
 				text-align:center;
 				font-size:50px;
@@ -44,12 +41,17 @@ background-color:white;
 				border:none;
 
 			}
-
+			a{
+				
+				width:100%;
+				height:33%;
+				font-size:50px;
+			}
 		</style>
 		<script>
-			var countX=0;
-			var countY=0;
-			var count=0;
+			countX=0;
+			countO=0;
+			countTotal=0;
 
 			var quadrado1=0;
 			var quadrado2=0;
@@ -68,19 +70,33 @@ background-color:white;
 			var quadrado15=0;
 			var quadrado16=0;
 			var controle=1;
-
-
+			function contagem(jogador){
+				if(jogador=="X"){
+					countX=countX+1;
+				}
+				if(jogador=="O"){
+					countO=countO+1;
+				}
+				countTotal=countX+countO;
+				if(countTotal==16){
+					if(countX>countO){
+						alert("O jogador X ganhou de "+countX+" à "+ countO);
+					}else if(countX<countO){
+						alert("O jogador O ganhou de "+countO+" à "+ countX);
+					}else{
+						alert("O jogo terminou empatado 8 à 8");
+					}
+				}
+			}
 			function troca(){
 				var jogador=document.j.jogador.value;
 				if(jogador=="X"){
 					document.j.jogador.value="O";
 					document.getElementById('jogador').style.background="blue";
-					
 				}
 				if(jogador=="O"){
 					document.j.jogador.value="X";
 					document.getElementById('jogador').style.background="red";
-					
 				}
 				
 			}
@@ -132,6 +148,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado01'>"+jogador+"</button>";
 						document.getElementById('quadrado01').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado2==0){
 							if(l23!="" && l38!="" && l78!="" && l27!=""){
 								troca();
@@ -153,6 +170,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado02'>"+jogador+"</button>";
 						document.getElementById('quadrado02').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado3==0){
 							if(l34!="" && l49!="" && l89!="" && l38!=""){
 								troca();
@@ -173,6 +191,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado03'>"+jogador+"</button>";
 						document.getElementById('quadrado03').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado4==0){
 							if(l45!="" && l510!="" && l910!="" && l49!=""){
 								troca();
@@ -193,6 +212,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado04'>"+jogador+"</button>";
 						document.getElementById('quadrado04').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado8==0){
 							if(l910!="" && l1015!="" && l1415!="" && l914!=""){
 								troca();
@@ -208,6 +228,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado05'>"+jogador+"</button>";
 						document.getElementById('quadrado05').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado6==0){
 							if(l78!="" && l813!="" && l1213!="" && l712!=""){
 								troca();
@@ -228,6 +249,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado06'>"+jogador+"</button>";
 						document.getElementById('quadrado06').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado7==0){
 							if(l89!="" && l914!="" && l1314!="" && l813!=""){
 								troca();
@@ -248,6 +270,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado07'>"+jogador+"</button>";
 						document.getElementById('quadrado07').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado8==0){
 							if(l910!="" && l1015!="" && l1415!="" && l914!=""){
 								troca();
@@ -268,6 +291,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado08'>"+jogador+"</button>";
 						document.getElementById('quadrado08').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado12==0){
 							if(l1415!="" && l1520!="" && l1920!="" && l1419!=""){
 								troca();
@@ -283,6 +307,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado09'>"+jogador+"</button>";
 						document.getElementById('quadrado09').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado10==0){
 							if(l1213!="" && l1318!="" && l1718!="" && l1217!=""){
 								troca();
@@ -303,6 +328,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado010'>"+jogador+"</button>";
 						document.getElementById('quadrado010').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado11==0){
 							if(l1314!="" && l1419!="" && l1819!="" && l1318!=""){
 								troca();
@@ -323,6 +349,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado011'>"+jogador+"</button>";
 						document.getElementById('quadrado011').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado12==0){
 							if(l1415!="" && l1520!="" && l1920!="" && l1419!=""){
 								troca();
@@ -343,6 +370,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado012'>"+jogador+"</button>";
 						document.getElementById('quadrado012').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado16==0){
 							if(l1920!="" && l2025!="" && l2425!="" && l1924!=""){
 								troca();
@@ -358,6 +386,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado013'>"+jogador+"</button>";
 						document.getElementById('quadrado013').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado14==0){
 							if(l1718!="" && l1823!="" && l2223!="" && l1722!=""){
 								troca();
@@ -373,6 +402,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado014'>"+jogador+"</button>";
 						document.getElementById('quadrado014').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado15==0){
 							if(l1819!="" && l1924!="" && l2324!="" && l1823!=""){
 								troca();
@@ -388,6 +418,7 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado015'>"+jogador+"</button>";
 						document.getElementById('quadrado015').style.color="black";
 						troca();
+						contagem(jogador);
 						if(quadrado16==0){
 							if(l1920!="" && l2025!="" && l2425!="" && l1924!=""){
 								troca();
@@ -403,11 +434,13 @@ background-color:white;
 						quadrado.innerHTML="<button type='button' id='quadrado016'>"+jogador+"</button>";
 						document.getElementById('quadrado016').style.color="black";
 						troca();
+						contagem(jogador);
 						
 						quadrado16=1;
 					}
 				}
 				troca();
+				ganhar();
 			}
 			function colocar(linha){
 				var colorJogador=document.getElementById('jogador').style.backgroundColor;
@@ -697,6 +730,6 @@ background-color:white;
 			<input type="button" name="jogador" id="jogador"  value="X" style="background-color:red">
 		</form>
 		<br><br>
-		<a href="como_jogar.html"  style="width:100%;height:33%;font-size:75px;">como jogar?</a>
+		<a href="https://josedesen.github.io/pontinho/como_jogar.html"  style="width:100%;height:33%;font-size:75px;">como jogar?</a>
 	</body>
 </html>
